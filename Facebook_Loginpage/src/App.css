@@ -1,0 +1,421 @@
+.Loginpage {
+  display: flex;
+  flex-direction: column;
+}
+
+.Loginpage-topside {
+  display: flex;
+  flex-direction: row;
+  height: 680px;
+}
+
+.Loginpage-topside-leftside {
+  flex: 1;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Loginpage-topside-rightside {
+  flex: 1;
+  width: 40%;
+}
+
+.horizontal-line {
+  width: 1px;
+  height: 99%;
+  border: none;
+  background: #ccd0d5;
+}
+
+.vertical-line {
+  width: 100%;
+  height: 2px;
+  border: none;
+  background: #dfe2e5;
+}
+
+.leftside-content1 p {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Inter';
+
+}
+
+.leftside-content1 {
+  display: flex;
+  flex-direction: column;
+  gap: 210px;
+  margin-top: 40px;
+  margin-left: 35px;
+  position: relative;
+  z-index: 10;
+}
+
+
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
+.login-image {
+  width: 650px;
+  height: 650px;
+  margin-left: -105px;
+}
+
+.loveyou {
+  color: #1877f2;
+}
+
+.fb-loginform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fb-login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  width: 546px;
+  padding: 16px;
+}
+
+.fb-login-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fb-login-title {
+  font-size: 16px;
+  color: #343638;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.fb-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fb-input {
+  height: 20px;
+  width: 546px;
+  border: 1px solid #ccd0d5;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 16px;
+  color: #343638;
+  outline: none;
+  font-family: inherit;
+}
+
+.fb-input::placeholder {
+  color: #8a8d91;
+}
+
+.fb-input:focus {
+  border-color: #0866ff;
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.fb-login-btn {
+  height: 48px;
+  width: 100%;
+  background: #0866ff;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-family: inherit;
+}
+
+.fb-login-btn:hover {
+  background: #1854bc;
+}
+
+.fb-forgot-link {
+  height: 48px;
+  width: 100%;
+  border-radius: 24px;
+  margin: 16px 0 8px;
+  color: #343638;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.fb-forgot-link:hover {
+  background-color: #ccd0d5;
+}
+
+.fb-create-btn {
+  width: 100%;
+  height: 48px;
+  background: #fff;
+  color: #0866ff;
+  border: 1px solid #0866ff;
+  border-radius: 24px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 32px;
+  font-family: inherit;
+}
+
+.fb-create-btn:hover {
+  background: #f5f6f7;
+}
+
+.fb-footer {
+  margin-top: 40px;
+  color: #343638;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.Loginpage-downside {
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ccd0d5;
+}
+
+.footer-content {
+  width: 980px;
+  max-width: 100%;
+  color: #737373;
+  font-size: 16px;
+  font-family: inherit;
+  padding: 0 20px;
+  margin-top: 30px;
+}
+
+.footer-langs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.footer-langs li,
+.footer-links li {
+  cursor: pointer;
+}
+
+.footer-langs li:hover,
+.footer-links li:hover {
+  text-decoration: underline;
+}
+
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+@media (max-width: 1080px) {
+  .Loginpage-topside {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .Loginpage-topside-leftside {
+    width: 100%;
+    justify-content: center;
+    flex: unset;
+    margin: 20px;
+  }
+
+  .leftside-content1 {
+    gap: 0;
+    margin: 0;
+    align-items: center;
+  }
+
+  .leftside-content1>div:nth-child(2) {
+    display: none;
+  }
+
+  .leftside-content2 {
+    display: none;
+  }
+
+  .horizontal-line {
+    width:100%;
+    height: 1px;
+  }
+
+  .Loginpage-topside-rightside {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex: unset;
+    
+  }
+
+  .fb-loginform {
+    margin-top: -20px;
+    width: 100%;
+  }
+
+  .fb-login-wrapper {
+    width: 480px;
+    height: auto;
+    margin: 70px;
+  }
+
+  .fb-login-card {
+    width: 480px;
+  }
+
+  .fb-input {
+    width: 93%;
+  }
+
+  .fb-login-btn{
+    width: 480px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Loginpage {
+    padding: 0;
+    background-color: #fff;
+  }
+
+  .Loginpage-topside {
+    width: 100%;
+    height: auto;
+    padding: 30px 16px 20px;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Loginpage-topside-leftside {
+    width: 100%;
+    margin: 0;
+    flex: unset;
+    display: flex;
+    justify-content: center;
+  }
+
+  .leftside-content1 > div:nth-child(2),
+  .leftside-content2,
+  .horizontal-line {
+    display: none;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .Loginpage-topside-rightside {
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+    flex: unset;
+  }
+
+  .fb-login-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 20px;
+  }
+
+  .fb-login-card {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  .fb-login-form {
+    gap: 12px;
+  }
+
+  .fb-input {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+  }
+
+  .fb-login-btn {
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+    margin-top: 8px;
+    box-sizing: border-box;
+  }
+
+  .fb-create-btn {
+    width: 100%;
+    height: 44px;
+    font-size: 16px;
+    margin-top: 24px;
+    box-sizing: border-box;
+  }
+
+  .fb-forgot-link {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .Loginpage-downside {
+    border-top: none;
+    padding: 20px 16px;
+  }
+
+  .footer-content {
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .footer-langs,
+  .footer-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .footer-langs li,
+  .footer-links li {
+    font-size: 12px;
+  }
+}
