@@ -1,1 +1,11 @@
 # Facebook-Loginpage-model
+
+For this project, I worked on developing a full front-end clone of the Facebook login page using React and pure CSS. The main objective was to make sure it looks identical to the real Facebook site and functions smoothly on all device sizes, which was a really good challenge.
+
+First, I built out the main layout using CSS flexbox so I could split the screen perfectly. On the left side, I put the Facebook logo and the main "Explore the things you love" text. I also added a cool feature here taking inspiration from the actual Facebook page: I made it so the big graphic image randomly changes every time you reload the page. I managed this in React by storing an array of different images (loginimage1, loginimage2, loginimage3) and using a Javascript math random function to select a different one on render. On the right side, I built the actual login form. I spent a lot of time matching their modern CSS styling, down to the pill-shaped log in buttons, the exact blue hex colors, and the white "Create new account" button with the blue border.
+
+After handling the main UI, I built out the complete footer. I made sure it had the exact same structure as the original, listing all the different language translation links on top and all the Meta product links below that, separated by a thin 1px horizontal line, with the copyright text at the very bottom.
+
+The most challenging but interesting part was making it fully responsive. I had to write two different CSS media queries to handle different screens. First I added a 1080px media query for tablets and laptops. When the screen shrinks below that, the two-column layout drops into a single centered column. I made the text hide away so just the logo stays on top. Then I added a separate 600px media query specifically tailored for normal mobile phones. Inside that 600px block, I made sure the inputs take up 100% width with box-sizing: border-box so they don't break the screen width. I also removed the card's outer shadows and borders so that on a real phone, the form flows edge to edge directly on the white background, exactly matching the real Facebook mobile site.
+
+Overall, doing this project really helped me understand how to implement complex flexbox layouts and how to handle advanced responsive media queries.
